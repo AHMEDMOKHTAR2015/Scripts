@@ -1,4 +1,5 @@
-document.getElementById("ctl00_MainContent_btnDoIt").addEventListener("click", function () {
+$(document).ready(function () {
+    document.getElementById("ctl00_MainContent_btnDoIt").addEventListener("click", function () {
     var CardData = {
         CardNumber: document.getElementById("ctl00_MainContent_txtCardNum").value,
         year: document.getElementById("ctl00_MainContent_dlYYYY").value,
@@ -8,3 +9,4 @@ document.getElementById("ctl00_MainContent_btnDoIt").addEventListener("click", f
     }
     alert("Card Number : " + CardData.CardNumber + "\n" + "year : " + CardData.year + "\n" + "Month : " + CardData.Month + "\n" + "ccv2 : " + CardData.ccv2 + "\n" + "MainContact : " + CardData.MainContact);
 }, false);
+});
