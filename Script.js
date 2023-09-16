@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    document.getElementById("ctl00$MainContent$btnDoIt").addEventListener("click", function () {
+    document.getElementById("ctl00_MainContent_btnDoIt").addEventListener("click", function () {
     var CardData = {
         CardNumber: document.getElementById("ctl00_MainContent_txtCardNum").value,
         year: document.getElementById("ctl00_MainContent_dlYYYY").value,
